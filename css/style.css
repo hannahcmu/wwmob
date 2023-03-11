@@ -1,0 +1,308 @@
+.skip{
+  /* background: white; */
+  background-color: white;
+  color:rgb(70, 6, 6);
+  position: absolute;
+  left: -1000px;
+  
+}
+.skip:focus{
+  left:0px
+}
+
+body{
+	margin:2%;
+	font-size:16px;
+}
+
+h1 {
+	color: rgb(70, 6, 6);
+    font-size: 3em;
+    font-family: 'Roboto', Times, serif;
+	  font-weight: bold;
+    text-align: left;
+    padding: 15px;
+    margin-top: 5%;
+}
+
+p{
+    font-family: 'Roboto', Times, serif;
+    line-height: 2;
+}
+
+a{
+    color:rgb(123, 66, 22);
+    font-weight: bold;
+    font-family: 'Roboto', Times, serif;
+    text-decoration: underline;
+
+    
+}
+
+a:hover{
+    background-color: grey;
+    color:white;
+    
+}
+
+.container{
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 30px;
+  column-gap: 5%;
+  justify-content: space-around;
+
+
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 35%;
+    /* padding: 5px; */
+    border-radius: 45px;
+    border:5px solid black;
+    opacity: 80%
+}
+
+
+main img:nth-of-type(2n){
+  background-color: rgb(123, 66, 22);
+  border-radius: 150pt;
+} 
+
+#marchphoto{
+  width: 100vw;
+  grid-column: span 3;
+  opacity: 100%;
+  border-radius: 0px;
+  border: 0px;
+}
+
+#mainp{
+  width: 100%;
+  grid-column: span 3;
+  grid-row: 2;
+  padding: 3%;
+  background-image:url("../images/floor-tile.png")
+}
+
+#mainp p{
+  margin: 3%;
+  text-align: center;
+}
+
+
+.literature, .history, .feminist {
+  border: 5px solid rgb(70, 6, 6); 
+  border-radius: 15px;
+  padding: 7%;
+  background-color: white;
+  text-align: center;
+  animation-duration: 5s;
+  animation-name: slidein;
+}
+
+
+.literature{
+  grid-row: 3;
+  grid-column: span 3;
+}
+
+.history{
+  grid-row: 4;
+  grid-column: span 3;
+}
+
+.feminist{
+  grid-row: 5;
+  grid-column: span 3;
+}
+
+#dis{
+  grid-column: span 3;
+  padding: 5%;
+  text-align: center;
+  font-weight: bold;
+  background-image:url("../images/floor-tile.png")
+}
+
+img:hover{
+  display: block;
+    margin: auto;
+    border:10px solid black;
+    opacity: 100%;
+    
+}
+
+div:nth-of-type(2n) img{
+  background-color: rgb(123, 66, 22);
+  border-radius: 150pt;
+}
+
+h2{
+    color: rgb(120, 44, 44);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px;
+    font-family: 'Roboto', Times, serif
+}
+
+h2 i{
+  margin: 1%
+}
+
+h3{
+  color: rgb(120, 44, 44);
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin:1%;
+  font-family: 'Roboto', Times, serif
+}
+
+.feminist-lit li{
+  list-style: square;
+  font-style: italic;
+  margin-left: 10%;
+}
+
+nav ul li{
+  display: flex;
+  align-self: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: rgb(41, 19, 2);
+  }
+  
+
+  nav .current{ 
+    font-style: oblique;
+    font-size: 125%;
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+    text-decoration-color: white;
+    text-underline-offset: 7px;
+    text-transform: uppercase;
+    background-color: rgb(123, 66, 22);
+ 
+  
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: rgb(16, 7, 1);
+  }
+
+
+/* ------- filter bar here */
+.filterDiv {
+  float: left;
+  text-align: center;
+  display: none;
+}
+
+.show {
+  display: block;
+  width: 100vh;
+  text-align: left;
+  margin:4%
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+
+}
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: rgb(120, 44, 44);
+  color: white;
+}
+
+/* ------- filter bar ends */
+
+dt{
+  font-weight: bold;
+  font-family: 'Roboto', Times, serif;
+  font-size: 155%;
+  color:rgb(120, 44, 44);
+  border-top: 4px double #333333;
+  margin-top: 2%;
+  padding:2%;
+  /* text-align: center; */
+
+}
+
+dd{
+  font-family: 'Roboto', Times, serif;
+  font-weight: bold;
+  font-style: oblique;
+}
+
+dd p{
+  font-family: 'Roboto', Times, serif;
+  font-style: normal;
+  margin-left: 3%;
+  margin-top: 1%;
+
+}
+
+
+footer{
+  background-color: rgb(41, 19, 2);
+  color: white;
+  text-align: center;
+  padding: 2% 0% 2% 0;
+
+
+}
+
+footer a{
+  color: white;
+  font-size: 150%;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+    background-color: rgb(51, 28, 11); 
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+    background-color: white; 
+  }
+}
+
+@media screen and
+  (prefers-reduced-motion: reduce), 
+  (update: slow) {
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important; 
+    transition-duration: 0.001ms !important;
+  }
+}
